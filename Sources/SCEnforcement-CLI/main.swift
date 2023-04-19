@@ -3,8 +3,8 @@ import Foundation
 import FoundationNetworking
 #endif
 
-var jamf = actions()
 
+var jamf = actions()
 
 #if os(Windows)
 
@@ -34,6 +34,7 @@ if jamf.password == "" {
     exit(1)
 }
 #else
+
 
 print("Please enter functional account:", terminator: "")
 let user_name = readLine(strippingNewline: true)!

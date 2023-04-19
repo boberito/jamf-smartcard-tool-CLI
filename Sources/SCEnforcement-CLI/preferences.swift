@@ -6,6 +6,10 @@
 //
 
 import Foundation
+#if os(Windows)
+import WinSDK
+import SwiftWin32
+#endif
 
 
 struct preferences {

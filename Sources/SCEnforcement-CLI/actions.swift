@@ -195,6 +195,13 @@ class actions: DataModelDelegate {
                         }
                     default:
                         print("I dont know how you got here but you did")
+                        if let statusCode = self.returnResponse?.statusCode {
+                            print("HTTP RESPONSE CODE: \(statusCode)")
+                        } else {
+                            print("No HTTP Response Code. Life is unfair")
+                        }
+                        
+                        exit(2)
                     }
                     
                 }
